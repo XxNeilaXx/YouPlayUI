@@ -5,6 +5,7 @@ import '@/styles/globals.css';
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 import { ThemeProvider } from '@/components/theme-provider';
 import { NavBar } from '@/components/nav-bar';
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'XxNeilaXx',
@@ -40,6 +41,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </UserProvider>
+        <Toaster />
       </body>
     </html>
   );
